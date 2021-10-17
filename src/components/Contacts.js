@@ -1,10 +1,10 @@
 import Contact from './Contact'
 
-const Contacts = ({ contacts, onDelete, onToggle }) => {
+const Contacts = ({ contacts, onDelete, onEdit }) => {
     return (
         <div className="grid grid-cols-3 gap-4 mx-auto">
           {contacts.map((contact) => (
-            <Contact key={contact.id} contact={contact} onDelete={onDelete} />
+            <Contact key={contact.id} contact={contact} onDelete={onDelete} onEdit={onEdit} />
           ))}  
         </div>
     )
